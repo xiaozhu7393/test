@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
-  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- THEME -->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
   <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
   <!--[if lt IE 9]>
@@ -44,26 +48,29 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <a class="g-logo">
-          
+          <a class="g-logo pull-left">
+            <img src="images/logo_dark.png" alt="logo" />
           </a>
 
-          <ul class="pull-right nav navbar-nav">
-            <li class="active">
-              <a href="#">Link
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
+
+          <ul class="pull-right nav navbar-nav navbar-right">
             <li>
-              <a href="#">Link</a>
+              <a href="#">SEARCH <span class="glyphicon-search"></span></a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav pull-right">
+            <li class="active">
+              <a href="#">首页</a>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" >Dropdown
+              <a href="#" class="dropdown-toggle">
+                产品中心
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a href="#">Action</a>
+                  <a href="#">Another action</a>
                 </li>
                 <li>
                   <a href="#">Another action</a>
@@ -71,43 +78,46 @@
                 <li>
                   <a href="#">Something else here</a>
                 </li>
-                <li role="separator" class="divider"></li>
                 <li>
                   <a href="#">Separated link</a>
                 </li>
-                <li role="separator" class="divider"></li>
                 <li>
                   <a href="#">One more separated link</a>
                 </li>
               </ul>
             </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">
+                  新闻中心
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a href="#">Something else here</a>
+                  </li>
+                  <li>
+                    <a href="#">Separated link</a>
+                  </li>
+                  <li>
+                    <a href="#">One more separated link</a>
+                  </li>
+                </ul>
+              </li>
+            <li>
+              <a href="#">关于我们</a>
+            </li> 
+            <li>
+              <a href="#">联系我们</a>
+            </li> 
           </ul>
 
-          <ul class="pull-right nav navbar-nav navbar-right">
-            <li>
-              <a href="#">Link</a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle">Dropdown
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#">Action</a>
-                </li>
-                <li>
-                  <a href="#">Another action</a>
-                </li>
-                <li>
-                  <a href="#">Something else here</a>
-                </li>
-                <li role="separator" class="divider"></li>
-                <li>
-                  <a href="#">Separated link</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          
 
         </div>
         <!-- /.navbar-collapse -->
