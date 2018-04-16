@@ -1,0 +1,107 @@
+.g-logo {
+  display: inline-block;
+  height: 96px;
+  line-height: 96px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+  background-color: transparent;
+}
+
+.nav.navbar-nav >li > a {
+  height: 96px;
+  line-height: 76px;
+  padding: 10px 30px;
+  display: block;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .nav.navbar-nav >li > a{
+    padding: 10px;
+    height: auto;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 1000px){
+  .navbar-nav {
+    float: none!important;
+  }
+  .navbar-nav>li {
+    float: none!important;
+  }
+  .navbar-header {
+    float: inherit;
+  }
+  .collapse  {
+    display: none!important;
+  }
+  .navbar-header {
+    position: relative;
+  }
+  .nav-toggle {
+      display: block;
+      right: 0;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto 0 auto auto;
+      width: 60px;
+      height: 60px;
+      z-index: 6;
+      position: absolute;
+      cursor: pointer;
+      -webkit-transition-duration: 0.66s;
+      transition-duration: 0.66s;
+      -webkit-transition-timing-function: swing;
+      transition-timing-function: swing;
+  }
+  
+  .nav-toggle .icon {
+      width: 30px;
+      height: 4px;
+      background-color: #00448b;
+      border-radius: 2px;
+      position: absolute;
+      top: 26px;
+      left: 15px;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      transiting-timing-function: swing;
+      z-index: 5;
+  }
+  .nav-toggle .icon:before, .nav-toggle .icon:after {
+      width: 30px;
+      height: 4px;
+      background-color: #00448b;
+      border-radius: 2px;
+      content: "";
+      position: absolute;
+      left: 0;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: swing;
+      transition-timing-function: swing;
+  }
+  .nav-toggle .icon:before {
+      top: -9px;
+  }
+  .nav-toggle .icon:after {
+    top: 9px;
+  }
+  body.sideopen .nav-toggle .icon:after {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+    -ms-transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  body.sideopen .nav-toggle .icon:before {
+    -webkit-transform: translateY(9px) rotate(45deg);
+    -ms-transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
+  }
+}

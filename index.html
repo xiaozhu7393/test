@@ -6,15 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
-  
+
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Base -->
+
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/global.css">
 
   <!-- THEME -->
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+
   <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
   <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
   <!--[if lt IE 9]>
@@ -34,45 +36,38 @@
 </head>
 
 <body>
-  <header>
+  <header class="g-header-nav">
+
     <nav class="navbar navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-            aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="nav-toggle">
+              <div class="icon"></div>
+          </div>
           <a class="g-logo pull-left">
             <img src="images/logo_dark.png" alt="logo" />
           </a>
+        </div>
 
-
-          <ul class="pull-right nav navbar-nav navbar-right">
-            <li>
-              <a href="#">SEARCH <span class="glyphicon glyphicon-search"></span></a>
-            </li>
-          </ul>
-
-          <ul class="nav navbar-nav pull-right">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
             <li class="active">
-              <a href="#">首页</a>
+              <a href="#">Link
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">Link</a>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle">
-                产品中心
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a href="#">Another action</a>
+                  <a href="#">Action</a>
                 </li>
                 <li>
                   <a href="#">Another action</a>
@@ -80,52 +75,52 @@
                 <li>
                   <a href="#">Something else here</a>
                 </li>
+                <li role="separator" class="divider"></li>
                 <li>
                   <a href="#">Separated link</a>
                 </li>
+                <li role="separator" class="divider"></li>
                 <li>
                   <a href="#">One more separated link</a>
                 </li>
               </ul>
             </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle">
-                  新闻中心
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#">Another action</a>
-                  </li>
-                  <li>
-                    <a href="#">Another action</a>
-                  </li>
-                  <li>
-                    <a href="#">Something else here</a>
-                  </li>
-                  <li>
-                    <a href="#">Separated link</a>
-                  </li>
-                  <li>
-                    <a href="#">One more separated link</a>
-                  </li>
-                </ul>
-              </li>
-            <li>
-              <a href="#">关于我们</a>
-            </li> 
-            <li>
-              <a href="#">联系我们</a>
-            </li> 
           </ul>
 
-          
-
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Another action</a>
+                </li>
+                <li>
+                  <a href="#">Something else here</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#">Separated link</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
         <!-- /.navbar-collapse -->
       </div>
       <!-- /.container-fluid -->
     </nav>
+
+
+
+
   </header>
 
 

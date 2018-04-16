@@ -1,0 +1,89 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+	-webkit-transition: all .300s;
+	-moz-transition: all .300s;
+	-o-transition: all .300s;
+	transition: all .300s;
+}
+
+a,
+a:focus,
+a:hover,
+a:active {
+	outline: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
