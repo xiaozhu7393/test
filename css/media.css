@@ -1,5 +1,8 @@
 
 @media screen and (max-width: 992px){
+  .art-box-foot {
+    padding: 10px 15px;
+  }
   .navbar-head {
     float: none;
   }
