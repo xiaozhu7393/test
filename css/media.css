@@ -1,5 +1,13 @@
 
 @media screen and (max-width: 992px){
+  .navbar-head {
+    float: none;
+  }
+  .nav-navicon, 
+  .nav.nav-navicon, 
+  .navbar-body.nav-navicon {
+    display: none;
+  }
   .nav-toggle {
       display: block;
       right: 0;

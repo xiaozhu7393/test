@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/jquery.fullPage.css">
   <!-- swiper -->
   <link rel="stylesheet" href="css/idangerous.swiper.css">
+  <link rel="stylesheet" href="css/focuspoint.css">
 
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/global.css">
@@ -41,8 +42,12 @@
 	<![endif]-->
   <!-- 加载 pintuer 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
   <script src="js/pintuer.js"></script>
+  <script src="js/webfoss.fullscreenstage.js"></script>
   <script src="js/jquery.mousewheel.js"></script>
   <script src="js/idangerous.swiper2.7.6.min.js"></script>
+  <script src="js/swiper.animate1.0.3.min.js"></script>
+  <script src="js/jquery.focuspoint.min.js"></script>
+  <script src="js/common.js"></script>
 
 
 
@@ -139,14 +144,68 @@
   <!-- banner start -->
   <section class="g-banner" id="g-ban">
       <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">slider1</div>
-            <div class="swiper-slide">slider2</div>
-            <div class="swiper-slide">slider3</div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a class="focuspoint" data-focus-x="0.33" data-focus-y="0.249" data-image-w="1180" data-image-h="380">
+              <img src="images/banner.jpg" alt="banner" />
+            </a>
+            <div class="ani ban-img-info" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s">
+              <header class="ban-img-infobox">
+                <h2>新世界创新</h2>
+                <p>New World Innovation</p>
+                <a class="info-more">了解更多</a>
+              </header>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <a class="focuspoint" data-focus-x="0.33" data-focus-y="0.249" data-image-w="1180" data-image-h="380">
+              <img src="images/banner2.jpg" alt="banner" />
+            </a>
+            <div class="ani ban-img-info" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s">
+              <header class="ban-img-infobox">
+                <h2>新世界创新</h2>
+                <p>New World Innovation</p>
+                <a class="info-more">了解更多</a>
+              </header>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <a class="focuspoint" data-focus-x="0.33" data-focus-y="0.249" data-image-w="1180" data-image-h="380">
+              <img src="images/banner3.jpg" alt="banner" />
+            </a>
+            <div class="ani ban-img-info" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s">
+              <header class="ban-img-infobox">
+                <h2>新世界创新</h2>
+                <p>New World Innovation</p>
+                <a class="info-more">了解更多</a>
+              </header>
+            </div>
           </div>
         </div>
+        <div class="g-icon g-icon-prev">
+          <i class="icon-chevron-left"></i>
+        </div>
+        <div class="g-icon g-icon-next">
+          <i class="icon-chevron-right"></i>
+        </div>
+        <div class="pagination"></div>
+      </div>
   </section>
   <!-- banner end -->
+
+  <!-- main start -->
+  <section>
+    <div class="container">
+      <div class="line">
+        <article class="xl6 xs4">
+          <div class="art-box">
+
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- main end -->
 
 
   <script src="js/main.js"></script>

@@ -43,10 +43,37 @@ $(function () {
     (function () {
         var g_ban = doc.getElementById('g-ban');
         if (g_ban) {
+            //ban_img('.swiper-slide>a>img','.swiper-slide>a','1180','380');
+
             var mySwiper = new Swiper('.swiper-container', {
-                autoplay: 5000, //可选选项，自动滑动
+                autoplay: 3000, //可选选项，自动滑动
                 loop: true, //可选选项，开启循环
-                speed: 1000
+                speed: 1500,
+                pagination : '.pagination',
+                paginationClickable :true,
+                onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+                    swiperAnimateCache(swiper); //隐藏动画元素 
+                    swiperAnimate(swiper); //初始化完成开始动画
+                }, 
+                    onSlideChangeEnd: function(swiper){ 
+                    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+                } 
+            });
+            /** prev */
+            $('.g-icon-prev').click(function(){
+                mySwiper.swipePrev(); 
+                mySwiper.stopAutoplay();
+            });
+            /** next */
+            $('.g-icon-next').click(function(){
+                mySwiper.swipeNext(); 
+                mySwiper.stopAutoplay();
+            });
+            $('.g-banner').mouseenter(function () { 
+                mySwiper.stopAutoplay();
+            });
+            $('.g-banner').mouseout(function () { 
+                mySwiper.startAutoplay();
             });
         }
 
