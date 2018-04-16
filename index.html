@@ -5,11 +5,11 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Page Title</title>
-  <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+  <meta name="viewport" content="width=640, user-scalable=0">
 
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- pintuer -->
+  <link rel="stylesheet" href="css/pintuer.css">
 
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/global.css">
@@ -23,113 +23,114 @@
   <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
   <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
   <!--[if lt IE 9]>
-      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.js"></script>
     <![endif]-->
 
+
+  <!-- jQuery (pintuer 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+  <script src="js/jquery.min.js"></script>
   <!--[if IE 8]>
 		<script src="js/jquery-1-9-1.min.js"></script>
 	<![endif]-->
-  <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-  <script src="js/jquery.min.js"></script>
-  <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-  <script src="js/bootstrap.min.js"></script>
+  <!-- 加载 pintuer 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+  <script src="js/pintuer.js"></script>
+
 
 
 </head>
 
 <body>
-  <header class="g-header-nav">
-
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <div class="nav-toggle">
+  <header class="bg-white g-header-nav">
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-head pr">
+          <div class="nav-toggle" data-target="#navbar1">
             <div class="icon"></div>
           </div>
-          <a class="g-logo pull-left">
-            <img src="images/logo_dark.png" alt="logo" />
+          <a href="#" class="g-logo">
+            <img src="images/logo_dark.png" />
           </a>
         </div>
+        <div class="navbar-body nav-navicon clearfix" id="navbar1">
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="nav-collapse" >
-          <ul class="nav navbar-nav navbar-right">
+          <div class="navbar-form navbar-right">
+            <form>
+              <input type="text" class="input input-auto" name="keywords" size="15" placeholder="关键词" />
+              <input type="submit" name="search" value="搜索" class="button" />
+            </form>
+          </div>
+          <ul class="nav nav-inline nav-menu navbar-right">
             <li>
-              <a href="javascript:void(0);">search<span class="glyphicon glyphicon-search"></span></a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right nav-list">
-            <li class="active">
               <a href="#">首页</a>
             </li>
-            <li class="dropdown">
-              <a href="####" class="dropdown-toggle">产品中心
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#">Action</a>
-                </li>
-                <li>
-                  <a href="#">Another action</a>
-                </li>
-                <li>
-                  <a href="#">Something else here</a>
-                </li>
-                <li role="separator" class="divider"></li>
-                <li>
-                  <a href="#">Separated link</a>
-                </li>
-                <li role="separator" class="divider"></li>
-                <li>
-                  <a href="#">One more separated link</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="javascript:void(0);" class="dropdown-toggle">新闻中心
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#">Action</a>
-                </li>
-                <li>
-                  <a href="#">Another action</a>
-                </li>
-                <li>
-                  <a href="#">Something else here</a>
-                </li>
-                <li role="separator" class="divider"></li>
-                <li>
-                  <a href="#">Separated link</a>
-                </li>
-                <li role="separator" class="divider"></li>
-                <li>
-                  <a href="#">One more separated link</a>
-                </li>
-              </ul>
-            </li>
-            <li class="active">
+            <li>
               <a href="#">关于我们</a>
             </li>
             <li class="active">
-              <a href="#">联系我们</a>
+              <a href="#">产品中心
+                <span class="arrow"></span>
+              </a>
+              <ul class="drop-menu">
+                <li>
+                  <a href="#">概述</a>
+                </li>
+                <li>
+                  <a href="#">网格系统
+                    <span class="arrow"></span>
+                  </a>
+                  <ul class="item-drop-menu">
+                    <li>
+                      <a href="#">响应式布局</a>
+                    </li>
+                    <li>
+                      <a href="#">非响应式布局</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">图标</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">新闻中心
+                <span class="arrow"></span>
+              </a>
+              <ul class="drop-menu">
+                <li>
+                  <a href="#">组件</a>
+                </li>
+                <li>
+                  <a href="#">模块
+                    <span class="arrow"></span>
+                  </a>
+                  <ul class="item-drop-menu">
+                    <li>
+                      <a href="#">头部</a>
+                    </li>
+                    <li>
+                      <a href="#">导航</a>
+                    </li>
+                    <li>
+                      <a href="#">底部</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </li>
           </ul>
+
         </div>
-        <!-- /.navbar-collapse -->
       </div>
-      <!-- /.container-fluid -->
-    </nav>
-
-
-
-
+    </div>
   </header>
 
+  <main>
+    <h1>
+      12
+    </h1>
+  </main>
 
 
   <script src="js/main.js"></script>

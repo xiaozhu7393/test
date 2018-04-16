@@ -1,21 +1,5 @@
 
-@media screen and (max-width: 1000px){
-  .navbar-nav {
-    float: none!important;
-    margin: 0;
-  }
-  .navbar-nav>li {
-    float: none!important;
-  }
-  .navbar-header {
-    float: inherit;
-  }
-  .nav-collapse  {
-    display: none;
-  }
-  .navbar-header {
-    position: relative;
-  }
+@media screen and (max-width: 992px){
   .nav-toggle {
       display: block;
       right: 0;
@@ -66,39 +50,75 @@
   .nav-toggle .icon:after {
     top: 9px;
   }
-  .navbar.listopen .nav-collapse  {
-    display: block;
-  }
-  .navbar.listopen .nav-toggle .icon {
+  .nav-toggle.listopen .icon {
     width: 0;
   }
-  .navbar.listopen .nav-toggle .icon:after {
+  .nav-toggle.listopen .icon:after {
     -webkit-transform: translateY(-9px) rotate(-45deg);
     -ms-transform: translateY(-9px) rotate(-45deg);
     transform: translateY(-9px) rotate(-45deg);
   }
-  .navbar.listopen .nav-toggle .icon:before {
+  .nav-toggle.listopen .icon:before {
     -webkit-transform: translateY(9px) rotate(45deg);
     -ms-transform: translateY(9px) rotate(45deg);
     transform: translateY(9px) rotate(45deg);
   }
-  .nav.navbar-nav >li > a{
-    padding: 10px;
-    height: auto;
+  .nav-inline li a {
     line-height: 30px;
   }
+  .navbar-form {
+    height: auto;
+    line-height: 50px;
+  }
+  .navbar-form >form {
+    display: block;
+  }
+  .navbar-form >form >input.input-auto {
+    width: 70%;
+  }
+  .navbar-form >form >input.button {
+    width: 20%;
+  }
   .g-logo {
-    height: 60px;
-    line-height: 60px;
+    height: 50px;
+    line-height: 50px;
   }
   .g-logo >img {
-    max-height: 60px !important;
+    height: 100%;
   }
-  .dropdown-menu {
+  .g-header-nav >.container {
+    padding: 0;
+  }
+  .navbar-form, .navbar-text {
+    border: none;
+  }
+  .navbar-body {
+    border: none;
+    background: transparent;
+  }
+  .drop-menu {
     position: static;
     float: none;
     border: none;
     box-shadow: none;
+  }
+  .nav-menu .drop-menu {
+    display: none!important;
+  }
+  .nav-menu >li.active .drop-menu{
+    display: block!important;
+  }
+  .nav ul.item-drop-menu {
+    display: none!important;
+  }
+  .nav ul.item-drop-menu {
+    display: none!important;
+  }
+  .nav .drop-menu li.active >ul.item-drop-menu {
+    display: block!important;
+  }
+  .nav-menu ul .arrow {
+    display: inline-block;
   }
 }
 @media (max-width: 768px) {

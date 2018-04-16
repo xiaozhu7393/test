@@ -88,3 +88,6 @@ a:active {
   cursor: pointer;
   text-decoration: none;
 }
+.pr {
+  position: relative;
+}
