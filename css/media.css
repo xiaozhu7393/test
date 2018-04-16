@@ -1,0 +1,106 @@
+
+@media screen and (max-width: 1000px){
+  .navbar-nav {
+    float: none!important;
+    margin: 0;
+  }
+  .navbar-nav>li {
+    float: none!important;
+  }
+  .navbar-header {
+    float: inherit;
+  }
+  .nav-collapse  {
+    display: none;
+  }
+  .navbar-header {
+    position: relative;
+  }
+  .nav-toggle {
+      display: block;
+      right: 0;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto 0 auto auto;
+      width: 60px;
+      height: 60px;
+      z-index: 6;
+      position: absolute;
+      cursor: pointer;
+      -webkit-transition-duration: 0.66s;
+      transition-duration: 0.66s;
+      -webkit-transition-timing-function: swing;
+      transition-timing-function: swing;
+  }
+  
+  .nav-toggle .icon {
+      width: 30px;
+      height: 4px;
+      background-color: #00448b;
+      border-radius: 2px;
+      position: absolute;
+      top: 26px;
+      left: 15px;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      transiting-timing-function: swing;
+      z-index: 5;
+  }
+  .nav-toggle .icon:before, .nav-toggle .icon:after {
+      width: 30px;
+      height: 4px;
+      background-color: #00448b;
+      border-radius: 2px;
+      content: "";
+      position: absolute;
+      left: 0;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: swing;
+      transition-timing-function: swing;
+  }
+  .nav-toggle .icon:before {
+      top: -9px;
+  }
+  .nav-toggle .icon:after {
+    top: 9px;
+  }
+  .navbar.listopen .nav-collapse  {
+    display: block;
+  }
+  .navbar.listopen .nav-toggle .icon {
+    width: 0;
+  }
+  .navbar.listopen .nav-toggle .icon:after {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+    -ms-transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  .navbar.listopen .nav-toggle .icon:before {
+    -webkit-transform: translateY(9px) rotate(45deg);
+    -ms-transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
+  }
+  .nav.navbar-nav >li > a{
+    padding: 10px;
+    height: auto;
+    line-height: 30px;
+  }
+  .g-logo {
+    height: 60px;
+    line-height: 60px;
+  }
+  .g-logo >img {
+    max-height: 60px !important;
+  }
+  .dropdown-menu {
+    position: static;
+    float: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+@media (max-width: 768px) {
+  
+}
